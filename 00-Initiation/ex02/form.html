@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form style="display: grid; grid-gap: 10px; width: 20%;" onsubmit="displayFormContents()">
+    <input type="text" id="firstname" placeholder="First name" />
+    <input type="text" id="name" placeholder="Name" />
+    <input type="number" id="age" placeholder="Age" />
+    <input type="tel" id="phone" placeholder="Phone" />
+    <input type="email" id="email" placeholder="Email" />
+    <div>
+      <label for="student">Student at 42</label>
+      <input type="checkbox" id="student" />
+    </div>
+    <div>
+      <label for="gender_male" name="gender">Male</label>
+      <input type="radio" id="gender_male" name="gender" />
+    </div>
+    <div>
+      <label for="gender_female" name="gender">Female</label>
+      <input type="radio" id="gender_female" name="gender" />
+    </div>
+    <div>
+      <label for="gender_other" name="gender">Other</label>
+      <input type="radio" id="gender_other" name="gender" />
+    </div>
+    <input type="submit" value="Submit" />
+  </form>
+  <script async src="popup.js"></script>
+</body>
+</html>
